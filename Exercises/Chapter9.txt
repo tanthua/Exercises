@@ -1,0 +1,23 @@
+void chapter_9_1(int n, int max) {
+	if (n <= max) {
+		cout << setw(n * 4) << "This was written by call number" << n << endl;
+		print_9_1(n + 1, max);
+		cout << setw(n * 4) << "This ALSO written by call number" << n << endl;
+	}
+}
+
+void chapter_9_2(string prefix, unsigned int levels) {
+
+	if (levels > 0) {
+		for (int i = 1; i < 3; ++i) {
+			string s = prefix;
+			s += char('0' + i);
+			s += '.';
+			print_9_2(s, levels - 1);
+		}
+	}
+	else {
+		cout << prefix << endl;
+	}
+
+}
