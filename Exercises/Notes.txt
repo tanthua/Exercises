@@ -1,0 +1,19 @@
+Additional projects: http://www.cs.colorado.edu/~main/projects/
+Tracking Progress:
+Current project: chapter 9 project 3
+Write a recursive function that has two inputs, first and seconds, which are both strings (From <string>).
+The function should print all arrangements of the letters in first , followed by second. For example,
+if first is "CAT", second is "MAN", then function should print the following:
+-CATMAN
+-CTAMAN
+-ACTMAN
+-ATCMAN
+-TACMAN
+-TCAMAN
+The stopping case of the function occurs when the length of first has zero characters.
+Helper functions:
+void string::insert(size_type position, size_type number_of_copies, char c)
+//Postcondition: The specified number of copies of c have been inserted into the string at the indicated position.
+//Chars that used to be at or after the given position have been shifted right one spot.
+void string::erase(size_type position, size_type n)
+//Postcondition: n characters have been removed from the string, beginning at the specified position
