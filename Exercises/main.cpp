@@ -5,22 +5,27 @@
 using namespace std;
 
 namespace hua_9_3{
-	void print();
+	void print(string first, string second);
 }
 
 int main() {
-	hua_9_3::print();
-	cout << "Hello Git" << endl;
+	hua_9_3::print("CAT", "MAN");
 	return 0;
 }
 
 namespace hua_9_3 {
-	void print() {
-		string test = "Hello World";
-		cout << test << endl;
-		test.insert(4, 2, '!');
-		cout << test << endl;
-		test.erase(4, 3);
-		cout << test << endl;
+	void print(string first, string second) {
+		if (first.size() > 0) {
+			for (size_t i = 0; i < first.size(); ++i) {
+				string tempFirst = first;
+				string tempSecond = second;
+				tempSecond.insert(0, 1, first.at(i));
+				tempFirst.erase(i, 1);
+				print(tempFirst, tempSecond);
+			}
+		}
+		else {
+			cout << second << endl;
+		}
 	}
 }

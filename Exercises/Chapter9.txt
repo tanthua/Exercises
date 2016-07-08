@@ -1,12 +1,18 @@
-void chapter_9_1(int n, int max) {
-	if (n <= max) {
-		cout << setw(n * 4) << "This was written by call number" << n << endl;
-		print_9_1(n + 1, max);
-		cout << setw(n * 4) << "This ALSO written by call number" << n << endl;
+
+namespace hua_9_1 {
+	void print(int n, int max) {
+		if (n <= max) {
+			cout << setw(n * 4) << "This was written by call number" << n << endl;
+			print_9_1(n + 1, max);
+			cout << setw(n * 4) << "This ALSO written by call number" << n << endl;
+		}
 	}
+
 }
 
-void chapter_9_2(string prefix, unsigned int levels) {
+
+namespace hua_9_2 {
+	void print(string prefix, unsigned int levels) {
 
 	if (levels > 0) {
 		for (int i = 1; i < 3; ++i) {
@@ -20,4 +26,23 @@ void chapter_9_2(string prefix, unsigned int levels) {
 		cout << prefix << endl;
 	}
 
+}
+
+}
+
+namespace hua_9_3 {
+	void print(string first, string second) {
+		if (first.size() > 0) {
+			for (size_t i = 0; i < first.size(); ++i) {
+				string tempFirst = first;
+				string tempSecond = second;
+				tempSecond.insert(0, 1, first.at(i));
+				tempFirst.erase(i, 1);
+				print(tempFirst, tempSecond);
+			}
+		}
+		else {
+			cout << second << endl;
+		}
+	}
 }
