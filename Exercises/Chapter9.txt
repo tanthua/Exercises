@@ -87,3 +87,17 @@ namespace hua_9_5 {
 		}
 	}
 }
+
+namespace hua_9_6 {
+	unsigned int factorial(unsigned int n) {
+		if (n == 0)
+			return 1;
+		else
+			return n * factorial(n - 1);
+	}
+
+	double C(unsigned int n, unsigned int r) {
+		return (double(factorial(n)) / double(factorial(r) * factorial(n - r)));
+	}
+}
+
