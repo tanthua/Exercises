@@ -4,28 +4,39 @@
 
 using namespace std;
 
-namespace hua_9_3{
-	void print(string first, string second);
+namespace hua_9_4 {
+	static size_t COUNT = 0;
+	void program(size_t user_input, string box);
 }
 
+
+
 int main() {
-	hua_9_3::print("CAT", "MAN");
+	size_t input;
+	cout << "How many unnumbered boxes can you see?" << endl;
+	cin >> input;
+	hua_9_4::program(input, "");
+	cout << hua_9_4::COUNT << endl;
 	return 0;
 }
 
-namespace hua_9_3 {
-	void print(string first, string second) {
-		if (first.size() > 0) {
-			for (size_t i = 0; i < first.size(); ++i) {
-				string tempFirst = first;
-				string tempSecond = second;
-				tempSecond.insert(0, 1, first.at(i));
-				tempFirst.erase(i, 1);
-				print(tempFirst, tempSecond);
+namespace hua_9_4 {
+	void program(size_t user_input, string box) {
+		COUNT += user_input;
+		if (user_input > 0) {
+			//
+			for (size_t i = 1; i <= user_input; ++i) {
+				string tempBox = box;
+				tempBox += char('0' + i);
+				tempBox += '.';
+				size_t input;
+				cout << "How many unnumbered boxes can you see in box number " << tempBox << " ?" << endl;
+				cin >> input;
+				program(input, tempBox);
 			}
 		}
 		else {
-			cout << second << endl;
+			cout << box << endl;
 		}
 	}
 }
