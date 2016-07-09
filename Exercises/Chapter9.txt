@@ -76,3 +76,14 @@ namespace hua_9_4 {
 		return 0;
 	*/
 }
+
+namespace hua_9_5 {
+	double sumover(unsigned int n) {
+		if (n == 0) {
+			return 0;
+		}
+		else {
+			return (1 / double(n) + sumover(n-1));
+		}
+	}
+}
