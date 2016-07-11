@@ -101,3 +101,68 @@ namespace hua_9_6 {
 	}
 }
 
+namespace hua_9_7 {
+    void program(char a[], size_t lower, size_t upper) {
+        if ( lower < upper) {
+            swap(a[lower], a[upper]);
+            program(a, lower + 1, upper - 1);
+        }
+    }
+    void swap(char& c1, char& c2) {
+        char temp;
+        temp = c1;
+        c1 = c2;
+        c2 = temp;
+    }
+}
+
+namespace hua_9_8 {
+    void line_asterisk(unsigned int n) {
+
+        for (size_t i = 1; i <= n; ++i) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+    
+    void print_asterisk(unsigned int n) {
+        if (n > 0) {
+            ++temp;
+            line_asterisk(temp);
+            print_asterisk(n - 1);
+            line_asterisk(temp);
+            --temp;
+
+        }
+    }
+}
+
+namespace hua_9_9 {
+    void print_asterisk(unsigned int n) {
+        for (int i = 0; i < n; ++i) {
+            if (i < n/2) {
+                cout << "*";
+            } else {
+                cout << "!";
+            }
+        }
+        cout << endl;
+    }
+    
+    void print_blank(unsigned int n) {
+        for (int i = 0; i < n; ++i) {
+            if (i < n/2)
+                cout << "!";
+            else
+                cout << "*";
+        }
+        cout << endl;
+
+    }
+}
+
+
+
+
+
+
