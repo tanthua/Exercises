@@ -4,28 +4,51 @@
 
 using namespace std;
 
-namespace hua_9_6 {
-	unsigned int factorial(unsigned int n);
-	double C(unsigned int n, unsigned int r);
+namespace hua_9_9 {
+	static unsigned int n_reverse = 1;
+
+	void print_asterisk(unsigned int n);
+	void print_blank(unsigned int n);
+	void main(unsigned int n);
 }
 
 
 
 int main() {
-	cout << hua_9_6::factorial(9) << endl;
-	cout << hua_9_6::C(10, 3) << endl;
+	hua_9_9::main(2);
 	return 0;
 }
 
-namespace hua_9_6 {
-	unsigned int factorial(unsigned int n) {
-		if (n == 0)
-			return 1;
-		else
-			return n * factorial(n - 1);
+namespace hua_9_9 {
+	void print_asterisk(unsigned int n) {
+		for (unsigned int i = 0; i < n; ++i) {
+			if (i < n / 2) {
+				cout << "*";
+			}
+			else {
+				cout << " ";
+			}
+		}
+		cout << endl;
 	}
 
-	double C(unsigned int n, unsigned int r) {
-		return (double(factorial(n)) / double(factorial(r) * factorial(n - r)));
+	void print_blank(unsigned int n) {
+		for (unsigned int i = 0; i < n; ++i) {
+			if (i < n / 2)
+				cout << " ";
+			else
+				cout << "*";
+		}
+		cout << endl;
+	}
+
+	void main(unsigned int n) {
+		if (n >= 1) {
+			n_reverse = n_reverse * 2;
+			print_asterisk(n_reverse);
+			main(n / 2);
+			print_blank(n_reverse);
+			n_reverse = n_reverse / 2;
+		}
 	}
 }
