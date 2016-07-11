@@ -1,8 +1,11 @@
 Additional projects: http://www.cs.colorado.edu/~main/projects/
+https://www.cs.colorado.edu/~main/projects/index.html
 Tracking Progress:
 + Chapter 1:
-+ Chapter 2:
-+ Chapter 3:
++ Chapter 2: The Statistician Class - https://www.cs.colorado.edu/~main/projects/Assn0201-Statistician.html
++ Chapter 3: 
+	Sequence Class with Fixed-Sized Array - https://www.cs.colorado.edu/~main/projects/chap03a.html
+	
 + Chapter 4:
 + Chapter 5:
 + Chapter 6:
@@ -16,3 +19,5 @@ Tracking Progress:
 + Chapter 14:
 + Chapter 15:
 Current project: chapter 9 project 9
+- Should do one project per chapter then repeat for next project
+- Maybe work on the web projects to save time on reputation and others

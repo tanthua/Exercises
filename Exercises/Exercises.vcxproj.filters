@@ -13,6 +13,36 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Chapter 2">
+      <UniqueIdentifier>{d28828f3-ee64-419b-8612-6ca2d326fc59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Chapter 3">
+      <UniqueIdentifier>{746c5806-1620-480b-8e1e-6c9cd1e04f24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Chapter 4">
+      <UniqueIdentifier>{9db43a20-b9e9-453f-bf57-670693a81fba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Chapter 5">
+      <UniqueIdentifier>{4149d2ca-8126-40f1-8ecd-9f706646bb9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter 9">
+      <UniqueIdentifier>{cce90aae-d8a1-48d3-aa0f-8c7a79989ef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter 8">
+      <UniqueIdentifier>{01578171-f1b7-4fee-b92a-0c473f2b38ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter 2">
+      <UniqueIdentifier>{37a48e9a-a5f9-4f9c-9994-a61500b75c6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter 3">
+      <UniqueIdentifier>{1227ae07-9709-4bc9-85be-daf6393d125a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter 4">
+      <UniqueIdentifier>{cb062f3b-2dbb-4836-b6fe-16bae0f8134e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter 5">
+      <UniqueIdentifier>{9a6542b9-2015-491e-b325-70ebab453217}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -20,11 +50,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Chapter9.txt">
-      <Filter>Source Files</Filter>
-    </Text>
     <Text Include="Notes.txt">
       <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="Chapter9.txt">
+      <Filter>Source Files\Chapter 9</Filter>
     </Text>
   </ItemGroup>
 </Project>
