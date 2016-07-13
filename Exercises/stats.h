@@ -62,7 +62,7 @@
 #define STATS_H
 #include <iostream>
 
-namespace main_savitch_2C
+namespace hua_2C
 {
 	class statistician
 	{
