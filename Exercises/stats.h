@@ -78,6 +78,7 @@ namespace hua_2C
 		double mean() const;
 		double minimum() const;
 		double maximum() const;
+		void print() const;
 		// FRIEND FUNCTIONS
 		friend statistician operator +
 			(const statistician& s1, const statistician& s2);
