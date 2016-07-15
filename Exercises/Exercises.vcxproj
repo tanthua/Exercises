@@ -147,15 +147,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="sequence1.cpp" />
     <ClCompile Include="stats.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Chapter9.txt" />
     <Text Include="Notes.txt" />
+    <Text Include="sequence_exam.txt" />
+    <Text Include="sequence_test.txt" />
     <Text Include="statexam.txt" />
     <Text Include="stattest.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="sequence1.h" />
     <ClInclude Include="stats.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

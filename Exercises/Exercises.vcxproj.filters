@@ -19,6 +19,12 @@
     <Filter Include="Source Files\Chapter 2">
       <UniqueIdentifier>{d3e22650-2347-4a03-9f4b-295d2a2ec6b9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Chapter 3">
+      <UniqueIdentifier>{4f144ded-1d97-4a97-b425-5822884d322f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Chapter 3">
+      <UniqueIdentifier>{a6fca90f-1a32-4bf8-bc0b-594bde95ddef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -26,6 +32,9 @@
     </ClCompile>
     <ClCompile Include="stats.cpp">
       <Filter>Source Files\Chapter 2</Filter>
+    </ClCompile>
+    <ClCompile Include="sequence1.cpp">
+      <Filter>Source Files\Chapter 3</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -41,10 +50,19 @@
     <Text Include="statexam.txt">
       <Filter>Header Files\Chapter 2</Filter>
     </Text>
+    <Text Include="sequence_test.txt">
+      <Filter>Header Files\Chapter 3</Filter>
+    </Text>
+    <Text Include="sequence_exam.txt">
+      <Filter>Header Files\Chapter 3</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stats.h">
       <Filter>Header Files\Chapter 2</Filter>
+    </ClInclude>
+    <ClInclude Include="sequence1.h">
+      <Filter>Header Files\Chapter 3</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
